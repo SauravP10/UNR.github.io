@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Geo Location Report</title>
+        <script src="distance.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Geo Location Report</h1>
+
+        <h2> List of the Cities:</h2>
+        <ul>
+
+        </ul>
+        
+        <h3>Distance between each city and University of Nevada, Reno(39.5437, 119.8142): </h3>
+        <ul1>
+
+        </ul1>
+
+        <h4>Sort:</h4>
+        <button class="button" onclick=""> Ascending </button>
+        <button class="button" onclick=""> Descending </button>
+
+        <ul2>
+
+        </ul2>
+
+    </body>
+
+    <script>
+        const listEl = document.querySelector('ul');
+        const listEl1 = document.querySelector('ul1');
+        const listEl2 = document.querySelector('ul2');
+
+        fetch('./coordinates.json')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+
+                data.forEach(post => {
+                    var dist = distance(39.5437, 119.8142, post.Latitude, post.Longitude, "N")
+                    listEl.insertAdjacentHTML('beforeend', `<li>${post.City} </li>`)
+                    listEl1.insertAdjacentHTML('beforeend', `<li>City: ${post.City}, 
+                                                                                    State: ${post.State}, 
+                                                                                    Latitude: ${post.Latitude}, 
+                                                                                    Longitude: ${post.Longitude}, 
+                                                                                    Distance: ${dist} </li>`)
+                                                                                    
+                });
+
+            });
+        
+            
+
+    </script>
+<!--
+<script>
+            var finalList = listEl1.insertAdjacentHTML('beforeend', `<li>City: ${post.City}, 
+                                                                                    State: ${post.State}, 
+                                                                                    Latitude: ${post.Latitude}, 
+                                                                                    Longitude: ${post.Longitude}, 
+                                                                                    Distance: ${dist} </li>`)
+            finalList = finalList.sort(a,b) => {
+                    if(a.dist < b.dist){
+                        return -1                               //Ascending Sort finalList.sort()
+                    }
+                    else {
+                        return 1                                //Descending Sort finalList.reverse()
+                    }
+
+            });            
+</script>
+-->
+</html>

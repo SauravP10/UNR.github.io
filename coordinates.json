@@ -1,0 +1,65 @@
+[
+	{
+		"City": "New York", 
+		"State": "New York",
+		"Latitude": "40.7127837",
+		"Longitude": "-74.0059413"
+	},
+
+	{
+		"City": "Los Angeles", 
+		"State": "California",
+		"Latitude": "34.0522342",
+		"Longitude": "-118.2436849"
+	},
+
+	{
+		"City": "Chicago",
+		"State": "Illinois",
+		"Latitude": "41.8781136",
+		"Longitude": "-87.6297982" 
+	},
+	{
+		"City": "Houston",
+		"State": "Texas",
+		"Latitude": "29.7604267", 
+		"Longitude": "-95.3698028"
+	},
+	{
+		"City": "Philadelphia",
+		"State": "Pennsylvania", 
+		"Latitude": "39.9525839",
+		"Longitude": "-75.1652215"
+	},
+	{
+		"City": "Phoenix",
+		"State": "Arizona",
+		"Latitude": "33.4483771",
+		"Longitude": "-112.0740373"
+	},
+	{
+		"City": "San Antonio",
+		"State": "Texas",
+		"Latitude": "29.4241219",
+		"Longitude": "-98.49362819999999"
+	},
+	{
+		"City": "San Diego",
+		"State": "California", 
+		"Latitude": "32.715738",
+		"Longitude": "-117.1610838"
+	},
+	{
+		"City": "Dallas", 
+		"State": "Texas",
+		"Latitude": "32.7766642",
+		"Longitude": "-96.79698789999999"
+	}, 
+	{
+		"City": "San Jose",
+		"State": "California",
+		"Latitude": "37.3382082",
+		"Longitude": "-121.8863286"
+	}
+]
+ 
